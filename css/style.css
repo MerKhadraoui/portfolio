@@ -16,12 +16,15 @@ body {
 }
 section {
   width: 80vw;
-  height: 90vh;
+  height: 80vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
   border: 2px red dashed;
+}
+.home-page {
+  display: flex;
 }
 .x-menu {
   background-color: silver;
@@ -31,7 +34,7 @@ section {
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
-  position: relative;
+  position: initial;
 }
 .line {
   width: 3rem;
@@ -60,7 +63,26 @@ section {
 .about-Me,
 .my-projects img,
 .contact-Me {
-  height: 5rem;
-  width: 5rem;
+  height: 50%;
+  width: 60%;
   display: flex;
+}
+.contact-Me {
+  display: block;
+}
+i {
+  height: 1.5rem;
+  width: 1.5rem;
+  border: 2px red dashed;
+}
+.my-projects {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.my-projects img {
+  width: 4rem;
+  height: 4rem;
+  border: 2px dimgray solid;
 }
