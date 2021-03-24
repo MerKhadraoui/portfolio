@@ -6,18 +6,28 @@
 :root {
   font-size: 16px;
 }
-.main {
-  width: 100vw;
+body {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
+  background-image: url("../img/bacgraund.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 section {
-  width: 40%;
+  width: 80vw;
+  height: 40vh;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-direction: column;
   border: 2px red dashed;
+}
+.x-menu {
+  width: 3rem;
+  height: 3rem;
+  background-color: gray;
+  display: flex;
+  justify-content: left;
 }
