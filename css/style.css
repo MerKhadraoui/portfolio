@@ -57,32 +57,33 @@ section {
   width: 16%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-direction: column;
+  padding: 3rem;
 }
-.about-Me,
-.my-projects img,
-.contact-Me {
-  height: 50%;
-  width: 60%;
-  display: flex;
-}
-.contact-Me {
-  display: block;
+.side-menu {
+  width: 100%;
+  display: none;
+  justify-content: space-between;
+  flex-direction: row;
 }
 i {
   height: 1.5rem;
   width: 1.5rem;
   border: 2px red dashed;
 }
-.my-projects {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-}
+
 .my-projects img {
   width: 4rem;
   height: 4rem;
   border: 2px dimgray solid;
+}
+.name-section {
+  font-size: 3rem;
+  font-family: "Playball", cursive;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
