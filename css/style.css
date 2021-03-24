@@ -10,24 +10,57 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
   background-image: url("../img/bacgraund.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 section {
   width: 80vw;
-  height: 40vh;
+  height: 90vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
   border: 2px red dashed;
 }
 .x-menu {
-  width: 3rem;
-  height: 3rem;
-  background-color: gray;
+  background-color: silver;
+  width: 4rem;
+  height: 3.5rem;
   display: flex;
-  justify-content: left;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  position: relative;
+}
+.line {
+  width: 3rem;
+  height: 0.5rem;
+  background-color: gray;
+  border-radius: 25%;
+}
+.x-menu:hover .first {
+  transform: rotate(0.15turn);
+  position: absolute;
+}
+.x-menu:hover .thr {
+  transform: rotate(-0.15turn);
+  position: absolute;
+}
+.x-menu:hover .sec {
+  display: none;
+}
+.home-page {
+  width: 16%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.about-Me,
+.my-projects img,
+.contact-Me {
+  height: 5rem;
+  width: 5rem;
+  display: flex;
 }
