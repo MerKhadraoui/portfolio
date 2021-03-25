@@ -18,32 +18,26 @@ section {
   width: 100vw;
   height: 100vh;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  /* justify-content: space-between;
+  align-items: center; */
   flex-direction: row;
   border: 2px red dashed;
 }
-.home-page {
-  display: flex;
-}
+
 .x-menu {
   background-color: silver;
-  width: 4rem;
-  height: 3.5rem;
+  width: 3rem;
+  height: 3rem;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-direction: column;
-  position: initial;
-}
-#menu {
-  display: flex;
 }
 .line {
-  width: 3rem;
-  height: 0.5rem;
+  width: 2.5rem;
+  height: 0.3rem;
   background-color: gray;
-  border-radius: 25%;
+  border-radius: 30%;
 }
 .x-menu:hover .first {
   transform: rotate(0.15turn);
@@ -89,14 +83,24 @@ a {
   width: 16%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   flex-direction: column;
-  padding: 3rem;
 }
+#lines li {
+  height: 5rem;
+  width: 10vw;
+  background-color: rgba(192, 192, 192, 0.384);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 10%;
+}
+
 .side-menu {
   width: 80vw;
   height: 90%;
-  display: flex;
+  display: none;
   justify-content: space-between;
   flex-direction: column;
   overflow: scroll;
