@@ -16,24 +16,17 @@
   <body>
     <section class="home-page">
       <div class="x-menu">
+        <button onclick="showMenu()"></button>
+
         <div class="line first"></div>
         <div class="line sec"></div>
         <div class="line thr"></div>
       </div>
       <div>
         <ul id="lines">
-          <li>
-            <a href="#about-me">About Me</a>
-            <div class="sqr"></div>
-          </li>
-          <li>
-            <a href="#my-projects">My projects</a>
-            <div class="sqr"></div>
-          </li>
-          <li>
-            <a href="#contact-me">Contact Me</a>
-            <div class="sgr"></div>
-          </li>
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#my-projects">My projects</a></li>
+          <li><a href="#contact-me">Contact Me</a></li>
         </ul>
       </div>
     </section>
@@ -93,16 +86,14 @@
         </div>
       </section>
     </section>
-    <!-- <script>
+    <script>
       const showMenu = () => {
-        if (menu.style.display == "none") {
-          menu.style.display = "flex";
-          menu.style.width = "20%";
+        if (lines.style.display == "none") {
+          lines.style.display = "flex";
         } else {
-          menu.style.display = "none";
-          menu.style.width = "10%";
+          lines.style.display = "none";
         }
       };
-    </script> -->
+    </script>
   </body>
 </html>

@@ -89,30 +89,37 @@ a {
   height: 5rem;
   width: 10vw;
   background-color: rgba(192, 192, 192, 0.384);
-  display: flex;
-  justify-content: space-between;
+  display: none;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   padding: 1rem;
+  padding-right: 0;
   border-radius: 10%;
 }
-
 .side-menu {
   width: 80vw;
   height: 90%;
   display: none;
   justify-content: space-between;
   flex-direction: column;
-  overflow: scroll;
 }
 i {
   height: 1.5rem;
   width: 1.5rem;
   border: 2px red dashed;
 }
-
+a:hover {
+  border-bottom: 3px solid rgb(202, 201, 201);
+  transform: scale(01);
+  color: rgb(202, 201, 201);
+}
 .my-projects img {
   width: 4rem;
   height: 4rem;
   border: 2px dimgray solid;
+}
+#lines:hover li {
+  transform: scale(1.2);
+  color: rgb(66, 63, 63);
 }
