@@ -15,68 +15,80 @@
   </head>
   <body>
     <section class="home-page">
-      <div class="x-menu">
-        <div class="line first"></div>
-        <div class="line sec"></div>
-        <div class="line thr"></div>
-      </div>
-      <div>
+      <div id="menu">
         <ul>
-          <li><a href="#">About Me</a></li>
-          <li><a href="#">My projects</a></li>
-          <li><a href="#">Contact Me</a></li>
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#my-projects">My projects</a></li>
+          <li><a href="#contact-me">Contact Me</a></li>
         </ul>
       </div>
     </section>
-    <section class="name-section">
-      <h1>Miya</h1>
-      <p>Once you learn to quit, it becomes a habit.</p>
+    <section class="main">
+      <section class="name-section">
+        <h1>Miya</h1>
+        <p>Once you learn to quit, it becomes a habit.</p>
+      </section>
+      <section class="side-menu">
+        <div class="about-Me" id="about-me">
+          <p>
+            Anenthusiastic adaptive and fast-learning person capable and
+            motivated biotechnology professional with superior analytical and
+            problem-solving skills. Possesses extensive knowledge of
+            Transgenesismethods. Fully committed to performing groundbreaking
+            research in an environment that fosters
+          </p>
+        </div>
+        <div class="my-projects" id="my-projects">
+          <a href="https://merkhadraoui.github.io/youtube-surface/"
+            ><img
+              src="./img/Screenshot_2021-03-24 Youtube Page.png"
+              alt="youtoube-surface"
+          /></a>
+          <a href="https://merkhadraoui.github.io/MobileApp/">
+            <img
+              src="./img/Screenshot_2021-03-24 Document.png"
+              alt="mobile-app"
+          /></a>
+          <a href="https://merkhadraoui.github.io/Animations/">
+            <img
+              src="./img/Screenshot_2021-03-24 Animations.png"
+              alt="Animations"
+          /></a>
+          <a href="https://merkhadraoui.github.io/log-in/">
+            <img src="./img/Screenshot_2021-03-24 Log in form.png" alt="log-in"
+          /></a>
+        </div>
+        <div class="contact-Me" id="contact-me">
+          <nav>
+            <i class="fas fa-at">&nbsp;&nbsp;E-mail:miyakhad@gmail.com</i>
+          </nav>
+          <nav>
+            <a href="https://github.com/MerKhadraoui">
+              <i class="fab fa-github"
+                >&nbsp;&nbsp;Github.com//MerKhadraoui</i
+              ></a
+            >
+          </nav>
+          <nav>
+            <a href="https://www.linkedin.com/in/miya-blume-a93b24107/"
+              ><i class="fab fa-linkedin"
+                >&nbsp;&nbsp;www.linkedin.com/meriemKhad</i
+              ></a
+            >
+          </nav>
+        </div>
+      </section>
     </section>
-    <section class="side-menu">
-      <div class="about-Me">
-        <p>
-          Anenthusiastic adaptive and fast-learning person capable and motivated
-          biotechnology professional with superior analytical and
-          problem-solving skills. Possesses extensive knowledge of
-          Transgenesismethods. Fully committed to performing groundbreaking
-          research in an environment that fosters
-        </p>
-      </div>
-      <div class="my-projects">
-        <a href="https://merkhadraoui.github.io/youtube-surface/"
-          ><img
-            src="./img/Screenshot_2021-03-24 Youtube Page.png"
-            alt="youtoube-surface"
-        /></a>
-        <a href="https://merkhadraoui.github.io/MobileApp/">
-          <img src="./img/Screenshot_2021-03-24 Document.png" alt="mobile-app"
-        /></a>
-        <a href="https://merkhadraoui.github.io/Animations/">
-          <img
-            src="./img/Screenshot_2021-03-24 Animations.png"
-            alt="Animations"
-        /></a>
-        <a href="https://merkhadraoui.github.io/log-in/">
-          <img src="./img/Screenshot_2021-03-24 Log in form.png" alt="log-in"
-        /></a>
-      </div>
-      <div class="contact-Me">
-        <nav>
-          <i class="fas fa-at">&nbsp;&nbsp;E-mail:miyakhad@gmail.com</i>
-        </nav>
-        <nav>
-          <a href="https://github.com/MerKhadraoui">
-            <i class="fab fa-github">&nbsp;&nbsp;Github.com//MerKhadraoui</i></a
-          >
-        </nav>
-        <nav>
-          <a href="https://www.linkedin.com/in/miya-blume-a93b24107/"
-            ><i class="fab fa-linkedin"
-              >&nbsp;&nbsp;www.linkedin.com/meriemKhad</i
-            ></a
-          >
-        </nav>
-      </div>
-    </section>
+    <!-- <script>
+      const showMenu = () => {
+        if (menu.style.display == "none") {
+          menu.style.display = "flex";
+          menu.style.width = "20%";
+        } else {
+          menu.style.display = "none";
+          menu.style.width = "10%";
+        }
+      };
+    </script> -->
   </body>
 </html>
