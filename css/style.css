@@ -18,13 +18,11 @@ section {
   width: 100vw;
   height: 100vh;
   display: flex;
-  /* justify-content: space-between;
-  align-items: center; */
+
   flex-direction: row;
-  border: 2px red dashed;
 }
 
-.x-menu {
+.x-menu button {
   background-color: silver;
   width: 3rem;
   height: 3rem;
@@ -61,7 +59,7 @@ section {
 }
 a {
   text-decoration: none;
-  /* text-decoration-color: green; */
+
   color: white;
   transition: 2s;
 }
@@ -87,39 +85,88 @@ a {
 }
 #lines li {
   height: 5rem;
-  width: 10vw;
+  width: 15vw;
   background-color: rgba(192, 192, 192, 0.384);
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 1rem;
   padding-right: 0;
   border-radius: 10%;
+}
+#lines button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  width: 15vw;
+  background-color: transparent;
+  font-family: "Playball", cursive;
+  font-size: 25px;
+}
+
+.my-projects a {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  font-family: "Playball", cursive;
 }
 .side-menu {
   width: 80vw;
   height: 90%;
-  display: none;
-  justify-content: space-between;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
 i {
   height: 1.5rem;
   width: 1.5rem;
-  border: 2px red dashed;
+}
+#meriem {
+  border-radius: 20%;
 }
 a:hover {
   border-bottom: 3px solid rgb(202, 201, 201);
   transform: scale(01);
-  color: rgb(202, 201, 201);
+  color: rgb(49, 47, 47);
 }
 .my-projects img {
-  width: 4rem;
-  height: 4rem;
+  width: 7rem;
+  height: 7rem;
   border: 2px dimgray solid;
 }
 #lines:hover li {
   transform: scale(1.2);
   color: rgb(66, 63, 63);
+}
+#aboutMe,
+#myProjects,
+#contactMe {
+  font: italic small-caps bold 18px/2 cursive;
+  height: 100%;
+  width: 60%;
+  display: block;
+  background-color: rgba(255, 255, 255, 0.425);
+  transform: scale(1.5);
+  color: rgb(59, 56, 56);
+  font-size: 20px;
+  box-shadow: 3px 3px rgba(91, 177, 144, 0.418),
+    -1em 0 0.4em rgba(13, 117, 48, 0.466);
+  padding: 3rem;
+  border-radius: 20%;
+  animation-name: re-size;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+@keyframes re-size {
+  from {
+    background-color: rgba(54, 155, 158, 0.582);
+  }
+  to {
+    background-color: rgba(19, 163, 96, 0.356);
+    box-shadow: 3px 3px rgb(128, 133, 123), -1em 0 0.4em rgb(223, 223, 173);
+  }
 }

@@ -16,58 +16,87 @@
   <body>
     <section class="home-page">
       <div class="x-menu">
-        <button onclick="showMenu()"></button>
-
-        <div class="line first"></div>
-        <div class="line sec"></div>
-        <div class="line thr"></div>
+        <button onclick="showMenu()">
+          <div class="line first"></div>
+          <div class="line sec"></div>
+          <div class="line thr"></div>
+        </button>
       </div>
       <div>
         <ul id="lines">
-          <li><a href="#about-me">About Me</a></li>
-          <li><a href="#my-projects">My projects</a></li>
-          <li><a href="#contact-me">Contact Me</a></li>
+          <li>
+            <a href="#aboutMe"
+              ><button onclick="showAboutme()">About Me</button></a
+            >
+          </li>
+          <li>
+            <a href="#myProjects"
+              ><button onclick="showProject()">My projects</button></a
+            >
+          </li>
+          <li>
+            <a href="#contactMe"
+              ><button onclick="showContact()">Contact Me</button></a
+            >
+          </li>
         </ul>
       </div>
     </section>
     <section class="main">
-      <section class="name-section">
-        <h1>Miya</h1>
+      <section class="name-section" id="myName">
+        <h1>Meriem Khadraoui</h1>
+        <img id="meriem" src="./img/my Photo.png" alt="meriem" />
         <p>Once you learn to quit, it becomes a habit.</p>
       </section>
       <section class="side-menu">
-        <div class="about-Me" id="about-me">
+        <div class="about-Me" id="aboutMe">
           <p>
-            Anenthusiastic adaptive and fast-learning person capable and
-            motivated biotechnology professional with superior analytical and
-            problem-solving skills. Possesses extensive knowledge of
-            Transgenesismethods. Fully committed to performing groundbreaking
-            research in an environment that fosters
+            Anenthusiastic adaptive and
+            fast-learning person capable and motivated biotechnology
+            professional with superior analytical and problem-solving skills.
+            Possesses extensive knowledge of Transgenesismethods. Fully
+            committed to performing groundbreaking research in an environment
+            that fosters
+
+           <h1> Education : </h1>
+             2013 (Algeria) Bachelor of Science: agricultural science <br>
+             2015(Algeria) Master ofScience: Biotechnology and vegetables
+             
+           
           </p>
         </div>
-        <div class="my-projects" id="my-projects">
+        <div class="my-projects" id="myProjects">
           <a href="https://merkhadraoui.github.io/youtube-surface/"
             ><img
               src="./img/Screenshot_2021-03-24 Youtube Page.png"
               alt="youtoube-surface"
-          /></a>
+            />youtoube surface</a
+          >
           <a href="https://merkhadraoui.github.io/MobileApp/">
             <img
               src="./img/Screenshot_2021-03-24 Document.png"
               alt="mobile-app"
-          /></a>
+            />
+            Mobile Application</a
+          >
           <a href="https://merkhadraoui.github.io/Animations/">
             <img
               src="./img/Screenshot_2021-03-24 Animations.png"
               alt="Animations"
-          /></a>
+            />Animations Application</a
+          >
           <a href="https://merkhadraoui.github.io/log-in/">
-            <img src="./img/Screenshot_2021-03-24 Log in form.png" alt="log-in"
-          /></a>
+            <img
+              src="./img/Screenshot_2021-03-24 Log in form.png"
+              alt="log-in"
+            />log-in Form</a
+          >
         </div>
-        <div class="contact-Me" id="contact-me">
+        <div class="contact-Me" id="contactMe">
           <nav>
-            <i class="fas fa-at">&nbsp;&nbsp;E-mail:miyakhad@gmail.com</i>
+            <a href="#"
+              ><i class="fas fa-at">&nbsp;&nbsp;Email:miyakhad@gmail.com</i></a
+            >
           </nav>
           <nav>
             <a href="https://github.com/MerKhadraoui">
@@ -89,9 +118,47 @@
     <script>
       const showMenu = () => {
         if (lines.style.display == "none") {
-          lines.style.display = "flex";
+          lines.style.display = "block";
+          aboutMe.style.display = "none";
+          myProjects.style.display = "none";
+          contactMe.style.display = "none";
         } else {
           lines.style.display = "none";
+          aboutMe.style.display = "none";
+          myProjects.style.display = "none";
+          contactMe.style.display = "none";
+        }
+      };
+      const showAboutme = () => {
+        if (aboutMe.style.display == "none") {
+          aboutMe.style.display = "block";
+          myProjects.style.display = "none";
+          contactMe.style.display = "none";
+          name.style.display = "none";
+        } else {
+          aboutMe.style.display = "none";
+          myProjects.style.display = "none";
+          contactMe.style.display = "none";
+        }
+      };
+      const showProject = () => {
+        if (myProjects.style.display == "none") {
+          myProjects.style.display = "block";
+          aboutMe.style.display = "none";
+          contactMe.style.display = "none";
+        } else {
+          myProjects.style.display = "none";
+          aboutMe.style.display = "none";
+          contactMe.style.display = "none";
+        }
+      };
+      const showContact = () => {
+        if (contactMe.style.display == "none") {
+          contactMe.style.display = "block";
+          myProjects.style.display = "none";
+          aboutMe.style.display = "none";
+        } else {
+          contactMe.style.display = "none";
         }
       };
     </script>
