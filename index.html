@@ -59,8 +59,8 @@
             that fosters
 
            <h1> Education : </h1>
-             2013 (Algeria) Bachelor of Science: agricultural science <br>
-             2015(Algeria) Master ofScience: Biotechnology and vegetables
+            Bachelor of Science: agricultural science <br>
+           Master ofScience: Biotechnology and vegetables
              
            
           </p>
@@ -119,23 +119,24 @@
       const showMenu = () => {
         if (lines.style.display == "none") {
           lines.style.display = "block";
+          
           aboutMe.style.display = "none";
           myProjects.style.display = "none";
           contactMe.style.display = "none";
         } else {
+          
           lines.style.display = "none";
-          aboutMe.style.display = "none";
-          myProjects.style.display = "none";
-          contactMe.style.display = "none";
+         
         }
       };
       const showAboutme = () => {
         if (aboutMe.style.display == "none") {
           aboutMe.style.display = "block";
+          myName.style.display="none";
           myProjects.style.display = "none";
           contactMe.style.display = "none";
           name.style.display = "none";
-        } else {
+        } else {  myName.style.display="block";
           aboutMe.style.display = "none";
           myProjects.style.display = "none";
           contactMe.style.display = "none";
@@ -144,9 +145,10 @@
       const showProject = () => {
         if (myProjects.style.display == "none") {
           myProjects.style.display = "block";
+          myName.style.display="none";
           aboutMe.style.display = "none";
           contactMe.style.display = "none";
-        } else {
+        } else {  myName.style.display="block";
           myProjects.style.display = "none";
           aboutMe.style.display = "none";
           contactMe.style.display = "none";
@@ -155,10 +157,13 @@
       const showContact = () => {
         if (contactMe.style.display == "none") {
           contactMe.style.display = "block";
+          myName.style.display="none";
           myProjects.style.display = "none";
           aboutMe.style.display = "none";
-        } else {
+        } else { myName.style.display="block";
           contactMe.style.display = "none";
+          myProjects.style.display = "none";
+          aboutMe.style.display = "none";
         }
       };
     </script>
