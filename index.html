@@ -25,17 +25,17 @@
       <div>
         <ul id="lines">
           <li>
-            <a href="#aboutMe"
+            <a href="#"
               ><button onclick="showAboutme()">About Me</button></a
             >
           </li>
           <li>
-            <a href="#myProjects"
+            <a href="#"
               ><button onclick="showProject()">My projects</button></a
             >
           </li>
           <li>
-            <a href="#contactMe"
+            <a href="#"
               ><button onclick="showContact()">Contact Me</button></a
             >
           </li>
@@ -120,9 +120,6 @@
         if (lines.style.display == "none") {
           lines.style.display = "block";
           
-          aboutMe.style.display = "none";
-          myProjects.style.display = "none";
-          contactMe.style.display = "none";
         } else {
           
           lines.style.display = "none";
@@ -132,12 +129,12 @@
       const showAboutme = () => {
         if (aboutMe.style.display == "none") {
           aboutMe.style.display = "block";
-          myName.style.display="none";
           myProjects.style.display = "none";
           contactMe.style.display = "none";
-          name.style.display = "none";
+          
         } else {  myName.style.display="block";
           aboutMe.style.display = "none";
+          myName.style.display="none";
           myProjects.style.display = "none";
           contactMe.style.display = "none";
         }
