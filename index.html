@@ -26,6 +26,11 @@
         <ul id="lines">
           <li>
             <a href="#"
+              ><button onclick="showHome()">Home Page</button></a
+            >
+          </li>
+          <li>
+            <a href="#"
               ><button onclick="showAboutme()">About Me</button></a
             >
           </li>
@@ -119,22 +124,37 @@
       const showMenu = () => {
         if (lines.style.display == "none") {
           lines.style.display = "block";
+
           
         } else {
           
           lines.style.display = "none";
+      
          
         }
       };
+
+      const showHome = () => {
+        if (myName.style.display == "none") {
+          myName.style.display = "block";
+          aboutMe.style.display = "none";
+          myProjects.style.display = "none";
+          contactMe.style.display = "none";
+          
+        } else { 
+          myName.style.display="none";
+        }
+        };
       const showAboutme = () => {
         if (aboutMe.style.display == "none") {
           aboutMe.style.display = "block";
           myProjects.style.display = "none";
           contactMe.style.display = "none";
-          
-        } else {  myName.style.display="block";
-          aboutMe.style.display = "none";
           myName.style.display="none";
+          
+        } else { 
+          myName.style.display="none";
+          aboutMe.style.display = "none";
           myProjects.style.display = "none";
           contactMe.style.display = "none";
         }
@@ -145,7 +165,7 @@
           myName.style.display="none";
           aboutMe.style.display = "none";
           contactMe.style.display = "none";
-        } else {  myName.style.display="block";
+        } else { 
           myProjects.style.display = "none";
           aboutMe.style.display = "none";
           contactMe.style.display = "none";
@@ -157,7 +177,8 @@
           myName.style.display="none";
           myProjects.style.display = "none";
           aboutMe.style.display = "none";
-        } else { myName.style.display="block";
+        } else {
+           myName.style.display="none";
           contactMe.style.display = "none";
           myProjects.style.display = "none";
           aboutMe.style.display = "none";
